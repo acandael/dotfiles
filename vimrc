@@ -58,6 +58,11 @@ set ignorecase		" Do case insensitive matching
 "set mouse=a		" Enable mouse usage (all modes)
 
 " Source a global configuration file if available
+set tabstop=2 " A tab character looks like 2 spaces
+set shiftwidth=2 " Indentation uses 2 spaces
+set expandtab " Use spaces instead of actual tab characters
+set softtabstop=2 " Pressing Tab inserts 2 spaces
+
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
